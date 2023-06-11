@@ -1,6 +1,6 @@
 # Shubhat Rashid Portfolio
-live @ shubhatrashid.netlify.app
-This is my personal portfolio website for showcasing my projects,work experience and skill set.
+* live @ https://shubhatrashid.netlify.app/
+* This is my personal portfolio website for showcasing my projects,work experience and skill set.
 
 ### Features
 * The computer at the start is a 3d model rendered with help of three.js/fibre. You can rotate it 360 degrees.
