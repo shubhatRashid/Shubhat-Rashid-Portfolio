@@ -1,21 +1,21 @@
-import {motion} from "framer-motion"
-import { styles } from "../styles"
-import { staggerContainer } from "../utils/motion"
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { staggerContainer } from "../utils/motion";
 
-const SectionWrapper = (Component,idName) =>
-    function HOC(){
-        return (
-        <motion.section
+const SectionWrapper = (Component, idName) =>
+  function HOC() {
+    return (
+      <motion.section
         id={idName}
         variants={staggerContainer()}
-        initial = "hidden"
+        initial="hidden"
         whileInView="show"
-        viewport={{once:true,amount:0.25}}
-         className={`${styles.padding} mx-auto max-w-7xl relative z-0`}>
-            <Component />
-        </motion.section>
-        )
-    }
-    
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.padding} mx-auto max-w-7xl relative z-0`}
+      >
+        <Component />
+      </motion.section>
+    );
+  };
 
-export default SectionWrapper
+export default SectionWrapper;
