@@ -1,4 +1,6 @@
 # Shubhat Rashid Portfolio
+![image](https://github.com/shubhat33/Shubhat-Rashid-Portfolio/assets/106548827/df63e6b7-7a78-4ebc-82bb-86eb07d8d06d)
+
 * live @ https://shubhatrashid.netlify.app/
 * This is my personal portfolio website for showcasing my projects,work experience and skill set.
 
