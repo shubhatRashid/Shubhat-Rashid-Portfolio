@@ -1,9 +1,8 @@
 # Shubhat Rashid Portfolio
 ![image](https://github.com/shubhat33/Shubhat-Rashid-Portfolio/assets/106548827/df63e6b7-7a78-4ebc-82bb-86eb07d8d06d)
 
-# Portfolio WebApp Readme
-
-This is a portfolio web application built using HTML, CSS, JavaScript, and the React framework. The application showcases my personal projects and skills in an interactive and visually appealing manner. It incorporates various libraries and technologies such as `email.js`, `react-threejs/drei`, `react-threejs/fibre`, `framer-motion`, and `Tailwind CSS` to enhance the user experience.
+* This is a portfolio web application built using HTML, CSS, JavaScript, and the React framework. The application showcases my personal projects and skills in an interactive and visually appealing manner. It incorporates various libraries and technologies such as `email.js`, `react-threejs/drei`, `react-threejs/fibre`, `framer-motion`, and `Tailwind CSS` to enhance the user experience.
+* live @ : https://shubhatrashid.netlify.app/
 
 ## Table of Contents
 
