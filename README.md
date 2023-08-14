@@ -67,10 +67,4 @@ Welcome to my Portfolio WebApp! This web application serves as a showcase of my 
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to submit a pull request or create an issue in the repository.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 Thank you for checking out my Portfolio WebApp! I hope you enjoy exploring my projects and learning more about my skills and experiences. If you have any questions or inquiries, please don't hesitate to get in touch using the contact form provided on the portfolio website.
