@@ -19,9 +19,10 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    ecommer,
+    todolist,
+    portfolio,
+    weatherapp,
     threejs,
   } from "../assets";
   
@@ -77,29 +78,9 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
+    }
   ];
   
   const experiences = [
@@ -186,16 +167,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Ecommer",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "The Ecommerce WebApp is a full-stack application that allows users to browse,and purchase products online. It utilizes Strapi as the backend CMS for managing products and orders, React for the frontend user interface, PostgreSQL as the database, and Stripe for secure payment processing.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "strapi",
           color: "green-text-gradient",
         },
         {
@@ -203,50 +184,75 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: ecommer,
+      source_code_link: "https://github.com/shubhatRashid/Ecommer",
     },
     {
-      name: "Job IT",
+      name: "Todo List",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This is a simple ToDo List web application built using HTML, CSS, JavaScript, Node.js, Express, EJS templating, and MongoDB. The app allows users to create, read, update, and delete tasks on their ToDo list.",
       tags: [
         {
-          name: "react",
+          name: "Javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Nodejs",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "express.js",
           color: "pink-text-gradient",
         },
+        {
+          name: "bootstrap",
+          color: "blue-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: todolist,
+      source_code_link: "https://github.com/shubhatRashid/Todo_list",
     },
     {
-      name: "Trip Guide",
+      name: "This Portfolio",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This is a portfolio web application built using HTML, CSS, JavaScript, and the React framework. The application showcases my personal projects and skills in an interactive and visually appealing manner. It incorporates various libraries and technologies such as email.js, react-threejs/drei, react-threejs/fibre, framer-motion, and Tailwind CSS to enhance the user experience.",
       tags: [
         {
-          name: "nextjs",
+          name: "Reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "fremerMotion",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwindcss",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: portfolio,
+      source_code_link: "https://github.com/shubhatRashid/Shubhat-Rashid-Portfolio",
+    },
+    {
+      name: "Weather App",
+      description:
+        "A simple Current Weather web application built using HTML, CSS, JavaScript, React, Bootstrap React, Material-UI, Git, and GitHub for version control and deployment.",
+      tags: [
+        {
+          name: "Reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "bootstrap",
+          color: "green-text-gradient",
+        },
+        {
+          name: "api",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: weatherapp,
+      source_code_link: "https://github.com/shubhatRashid/WeatherApp",
     },
   ];
   
