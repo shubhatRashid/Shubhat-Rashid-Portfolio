@@ -3,10 +3,12 @@ import { Tilt } from 'react-tilt'
 import {motion} from 'framer-motion'
 import { github } from '../assets'
 import { SectionWrapper } from '../hoc'
-import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { styles } from '../styles'
-const ProjectCard = ({index,name,description,tags,image,source_code_link}) =>{
+import {client} from "../client";
+import { useState,useEffect } from "react";
+
+const ProjectCard = ({index,name,description,tags,image,link}) =>{
 return (
   <motion.div variants={fadeIn("up","spring",index*0.5,0.75)}>
     <Tilt 
@@ -18,13 +20,13 @@ return (
     >
       <div>
         <img 
-          src={image}
+          src={image.asset.url}
           alt = {name}
           className='w-full h-full object-cover rounded-2xl'
         />
         <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
-              onClick={()=>window.open(source_code_link,"_black")}
+              onClick={()=>window.open(link,"_black")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
               >
                 <img src={github} alt='github' className='w-1/2 h-1/2 '/>
@@ -38,9 +40,9 @@ return (
       <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map(tag => (
               <p
-              key = {tag.name}
-              className={`text-[14px] ${tag.color}`}
-              >#{tag.name}</p>
+              key = {tag}
+              className={`text-[14px]`}
+              >#{tag}</p>
             ))}
       </div>
     </Tilt>
@@ -48,7 +50,29 @@ return (
 )
 }
 const Works = () => {
-
+  
+const [Data,setData] = useState([])
+  useEffect(() => {
+		client
+			.fetch(
+				`*[_type == "projects"]{
+      title,
+      name,
+      image{
+        asset->{
+          _id,
+          url
+        },
+      },
+      description,
+      link,
+      tags,
+    }`
+			)
+			.then((data) => setData(data))
+			.catch(console.error);
+	}, []);
+ 
   return (
     <>
       <motion.div
@@ -72,7 +96,7 @@ const Works = () => {
         and manage projects effectively.
         </motion.p>
         <div className='mt-20 flex flex-wrap gap-7'>
-              {projects.map((project,index) => (
+              {Data.map((project,index) => (
                 <ProjectCard key = {index} {...project} index = {index}/>
               ))}
         </div>

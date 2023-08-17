@@ -40,6 +40,7 @@ const ExperienceCard = ({experience})=>(
   </VerticalTimelineElement>
 )
 const Experience = () => {
+  
   return (
     <>
       <motion.div

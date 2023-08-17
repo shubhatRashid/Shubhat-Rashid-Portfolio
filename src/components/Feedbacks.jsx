@@ -3,7 +3,8 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { fadeIn,textVariant } from '../utils/motion'
-import { testimonials } from '../constants'
+import {client} from "../client";
+import { useState,useEffect } from "react";
 
 const FeedbackCard = ({index,testimonial,name,designation,company,image}) =>{
   return (
@@ -29,6 +30,26 @@ const FeedbackCard = ({index,testimonial,name,designation,company,image}) =>{
   )
 }
 const Feedbacks = () => {
+const [Data,setData] = useState([])
+  useEffect(() => {
+		client
+			.fetch(
+				`*[_type == "testimonials"]{
+      title,
+      name,
+      image,
+      designation,
+      company,
+      testimonial,
+    }`
+			)
+			.then((data) => setData(data))
+			.catch(console.error);
+	}, []);
+  Data.map((project,index)=>{
+    console.log(project)
+  })
+
   return (
     <div className='mt-12 bg-black-100 rounded-[20px] '>
         <div className={`${styles.padding} bg-tertiary rounded-3xl min-h-300px`}>
@@ -38,7 +59,7 @@ const Feedbacks = () => {
             </motion.div>
         </div>
         <div className={`${styles.paddingX} -mt-10 pb-14 flex flex-wrap gap-7`}>
-              {testimonials.map((testimonial,index) =>{
+              {Data.map((testimonial,index) =>{
                 return (
                   <FeedbackCard key = {testimonial.name} index ={index} {...testimonial} />
                 )
