@@ -1,71 +1,76 @@
 # Shubhat Rashid Portfolio
 ![image](https://github.com/shubhat33/Shubhat-Rashid-Portfolio/assets/106548827/df63e6b7-7a78-4ebc-82bb-86eb07d8d06d)
 
-* This is a portfolio web application built using HTML, CSS, JavaScript,sanity CMS and the React framework. The application showcases my personal projects and skills in an interactive and visually appealing manner. It incorporates various libraries and technologies such as `email.js`, `react-threejs/drei`, `react-threejs/fibre`, `framer-motion`, and `Tailwind CSS` to enhance the user experience.
-* live @ : https://shubhatrashid.netlify.app/
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-Welcome to my Portfolio WebApp! This web application serves as a showcase of my projects, skills, and achievements. Whether you're a potential employer, collaborator, or just curious about my work, this portfolio provides an overview of what I can do. It is designed to be user-friendly, responsive, and visually engaging.
-
-## Features
-
-- **Project Showcase:** Display a curated selection of my projects with descriptions, screenshots, and links to their respective repositories or live demos.
-
-- **Interactive 3D Elements:** Utilize the power of `react-threejs/drei` and `react-threejs/fibre` to incorporate interactive 3D elements, providing a unique and engaging experience for users.
-
-- **Smooth Animations:** Enhance the user experience with smooth animations and transitions powered by `framer-motion`.
-
-- **Contact Form:** Allow visitors to get in touch with me using a contact form powered by `email.js`, making it easy for them to reach out.
-
-- **Responsive Design:** Ensure that the portfolio is accessible and looks great on various devices, thanks to the responsive design principles and `Tailwind CSS`.
+Welcome to my portfolio website! This website showcases my skills, projects, and experiences in a visually appealing and interactive manner. Below, you'll find information on the technologies used to build this website, how to set it up locally, and how to customize it to make it your own.
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- React
-- Sanity - CMS for content management .
-- `email.js` - For handling contact form submissions and sending emails.
-- `react-threejs/drei` and `react-threejs/fibre` - For creating and displaying interactive 3D elements.
-- `framer-motion` - For adding smooth animations and transitions.
-- `Tailwind CSS` - For building responsive and stylish UI components.
+- HTML: The structure and content of the website.
+- CSS: Styling and layout of the website.
+- JavaScript: Adding interactivity and dynamic behavior to the website.
+- React: Building modular and reusable components.
+- email.js: Handling contact form submissions and sending emails.
+- react-threejs/drei and react-threejs/fibre: Creating and displaying interactive 3D elements.
+- framer-motion: Adding smooth animations and transitions.
+- Tailwind CSS: Building responsive and stylish UI components.
+- Sanity: Backend content management system.
 
-## Installation
+## Setup Instructions
 
-1. Clone this repository: `git clone https://github.com/yourusername/your-portfolio.git`
-2. Navigate to the project directory: `cd your-portfolio`
-3. Install the dependencies: `npm install`
+To run this portfolio website locally, follow these steps:
 
-## Usage
+1. **Clone the Repository**: Clone this repository to your local machine using `git clone`.
 
-1. Update the content in the `src/components/ProjectList.js` file to showcase your own projects. Replace placeholder data with your project information, screenshots, and links.
+```bash
+git clone https://github.com/your-username/Shubhat-Rashid-Portfolio.git
+```
 
-2. Customize the `src/components/ContactForm.js` file to configure the contact form fields and integrate it with your `email.js` account for handling form submissions.
+2. **Navigate to the Directory**: Change your working directory to the cloned repository.
 
-3. Add interactive 3D elements using the `react-threejs/drei` and `react-threejs/fibre` libraries. Explore the documentation for these libraries to create captivating 3D visuals.
+```bash
+cd Shubhat-Rashid-Portfolio
 
-4. Utilize `framer-motion` to add animations and transitions to your portfolio components, providing an engaging user experience.
+```
 
-5. Tailor the styling of your portfolio using `Tailwind CSS` classes and utility functions to ensure a responsive and visually appealing design.
+3. **Install Dependencies**: Install the required dependencies using your preferred package manager. In this example, we'll use npm.
 
-6. Start the development server: `npm start`
+```bash
+npm install
+```
 
-7. Open your browser and visit `http://localhost:3000` to see your portfolio in action.
+4. **Configure email.js**: Open the `src/components/ContactForm.js` file and replace the email configuration with your own email settings.
 
-## Contributing
+5. **Start the Development Server**: Start the development server to preview the website in your browser.
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to submit a pull request or create an issue in the repository.
+```bash
+npm start
+```
 
-Thank you for checking out my Portfolio WebApp! I hope you enjoy exploring my projects and learning more about my skills and experiences. If you have any questions or inquiries, please don't hesitate to get in touch using the contact form provided on the portfolio website.
+6. **Access the Website**: Open your web browser and navigate to `http://localhost:3000` to see the website in action.
+7. **Configure Sanity : install sanity or clone my portfolio-backend repository and add your sanity acount details thats it.
+
+## Customization
+
+Feel free to customize the content, styles, and functionality of this portfolio website to match your own preferences and showcase your work. Here are a few pointers:
+
+- **Content**: Update the `src/data` directory with your own information, projects, and experiences.
+
+- **Styling**: Modify the CSS and Tailwind CSS classes in the `src/styles` directory to adjust the visual appearance of the website.
+
+- **Functionality**: Explore the React components in the `src/components` directory to understand and modify the behavior of different sections.
+
+- **3D Elements**: Utilize the `react-threejs/drei` and `react-threejs/fibre` libraries to create and display interactive 3D elements. Refer to their documentation for guidance.
+
+- **Animations**: Add smooth animations and transitions using the `framer-motion` library. Review the documentation for animation ideas and techniques.
+
+- **Backend Content**: Use Sanity as a backend content management system to manage and update content dynamically. Refer to Sanity's documentation for integration and usage.
+
+## Deployment
+
+Once you're satisfied with your customized portfolio website, you can deploy it to a hosting platform of your choice. Popular options include Netlify, Vercel and AWS Amplify. Follow the deployment instructions provided by your chosen platform to make your portfolio accessible online.
+
+## Feedback and Contributions
+
+If you have any feedback, suggestions, or would like to contribute to this portfolio template, feel free to open an issue or submit a pull request on the GitHub repository. Your contributions are greatly appreciated!
+
+Thank you for using this portfolio template. Happy showcasing! 🚀
