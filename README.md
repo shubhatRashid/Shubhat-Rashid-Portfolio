@@ -1,5 +1,6 @@
 # Shubhat Rashid Portfolio
 ![image](https://github.com/shubhat33/Shubhat-Rashid-Portfolio/assets/106548827/df63e6b7-7a78-4ebc-82bb-86eb07d8d06d)
+* live version @ : https://shubhatrashid.netlify.app/
 
 Welcome to my portfolio website! This website showcases my skills, projects, and experiences in a visually appealing and interactive manner. Below, you'll find information on the technologies used to build this website, how to set it up locally, and how to customize it to make it your own.
 
