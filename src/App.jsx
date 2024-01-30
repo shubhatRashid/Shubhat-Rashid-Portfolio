@@ -11,10 +11,10 @@ function App() {
                 <Hero />
           </div>
           <About/>
-          <Experience/>
-          <Tech/>
+          {/* <Experience/> */}
+          {/* <Tech/> */}
           <Works/>
-          <Feedbacks/>
+          {/* <Feedbacks/> */}
           <div relative z-0>
             <Contact />
             <StarsCanvas />
