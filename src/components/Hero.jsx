@@ -5,7 +5,26 @@ import { Tilt } from 'react-tilt'
 import {fadeIn} from "../utils/motion"
 import { motion } from "framer-motion"
 import {services} from "../constants"
-
+import resume from "../../dist/resume.pdf"
+const ScrollButton = () => {
+  return (
+    <div className='flex justify-center items-center '>
+          <a href='#about'>
+            <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+                  <motion.div 
+                    animate = {{y:[0,24,0]}}
+                    transition = {{
+                      duration:1.5,
+                      repeat : Infinity,
+                      repeatype : "loop"
+                    }}
+                    className ="w-3 h-3 rounded-full bg-secondary mb-1 "
+                  />
+            </div>
+          </a>
+    </div>
+  )
+}
 const Social = ({index,title,icon}) =>{
   return  (
  <Tilt className="">
@@ -31,50 +50,43 @@ const Social = ({index,title,icon}) =>{
 
 const Hero = () => {
   return (
-    <section className={`h-screen relative mx-auto py-20 px-20`}>
-      <div className='md:flex-row flex-col-reverse flex justify-center items-center h-full gap-10'>
+    <section className={`flex items-center justify-center pt-20 xs:pt-0 max-h-screen`}>
+      <div className='md:flex-row flex-col flex justify-center items-center h-full gap-10 w-full'>
 
-        <div className={`flex flex-col items-start justify-around h-full`}>
-          <div className='flex flex-row mx-auto items-start justify-center gap-5'>
+        <div className={`flex flex-col items-start justify-center gap-20 h-screen`}>
+          <div className='flex flex-row mx-auto items-start justify-center gap-5 h-1/2 w-full'>
             <div className=''>
                   <div className='bg-[#915eff] w-5 h-5 rounded-full'/>
-                  <div className='w-1 bg-[#915eff] sm:h-80 h-40 mx-auto violet-gradient'/>
+                  <div className='w-1 bg-[#915eff] sm:h-80 h-80 mx-auto violet-gradient'/>
             </div>
-            <div>
-              <h1 className={`${styles.heroHeadText} text-white`}>Hi, i'm <span className="text-[#915eff]">Shubhat</span></h1>
-              <p className={`${styles.heroSubText} text-white-100`}>I develop 3D visuals, user <br className='sm:block hidden'/>interfaces and web applications</p>
+            <div className='flex flex-col  w-full gap-3'>
+              <h1 className='text-white' >Hi, i'm </h1>
+              <span className={`${styles.heroHeadText} text-[#915eff]`}>Shubhat ,</span>
+              <p className={`${styles.heroSubText} text-white-100`}>Full/Mern Stack Developer <br className='sm:block hidden'/></p>
+              <div className='flex w-full items-center justify-start p-1 '>
+                <a className='py-4 px-8 rounded-lg bg-[#915eff] text-white' href={resume} download>Download CV</a>
+              </div>
             </div>
+            
           </div>
 
-          <div className='flex gap-5'>
-          {services.map((service,index) =>(
-          <Social  index = {index} />
-        ))}
+          <div className='w-full flex flex-row justify-around items-center gap-5'>
+            <div className='flex gap-5 items-center justify-center'>
+              {services.map((service,index) =>(
+              <Social  index = {index} />
+            ))}
+            </div>
+            <ScrollButton />
           </div>
         </div>
 
-        <div className='flex justify-center items-center lg:h-full h-1/2 border border-2 rounded-lg border-[#915eff]'>
+        <div className='flex justify-center items-center lg:w-1/2 w-full border border-2 rounded-lg border-[#915eff] '>
         
             <Cube/>
           
         </div>
       </div>
       
-    {/* <div className='absolute xs:bottom-10 bottom-32  w-full flex justify-center items-center '>
-          <a href='#about'>
-            <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-                  <motion.div 
-                    animate = {{y:[0,24,0]}}
-                    transition = {{
-                      duration:1.5,
-                      repeat : Infinity,
-                      repeatype : "loop"
-                    }}
-                    className ="w-3 h-3 rounded-full bg-secondary mb-1 "
-                  />
-            </div>
-          </a>
-    </div> */}
     </section>
   )
 }
