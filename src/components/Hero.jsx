@@ -31,8 +31,8 @@ const Social = ({index,title,icon}) =>{
 
 const Hero = () => {
   return (
-    <section className={`h-screen relative mx-auto pt-20 px-20`}>
-      <div className='md:flex-row flex-col flex justify-center items-center h-full pt-15'>
+    <section className={`h-screen relative mx-auto py-20 px-20`}>
+      <div className='md:flex-row flex-col-reverse flex justify-center items-center h-full gap-10'>
 
         <div className={`flex flex-col items-start justify-around h-full`}>
           <div className='flex flex-row mx-auto items-start justify-center gap-5'>
@@ -46,14 +46,14 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className='flex gap-5 w-full justify-center '>
+          <div className='flex gap-5'>
           {services.map((service,index) =>(
           <Social  index = {index} />
         ))}
           </div>
         </div>
 
-        <div className='flex justify-center items-center lg:h-full h-1/2 w-1/2'>
+        <div className='flex justify-center items-center lg:h-full h-1/2 border border-2 rounded-lg border-[#915eff]'>
         
             <Cube/>
           
