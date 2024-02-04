@@ -1,4 +1,9 @@
 import {
+    materialUi,
+    sanity,
+    strapi,
+    bootstrap,
+    express,
     mobile,
     backend,
     creator,
@@ -24,8 +29,28 @@ import {
     portfolio,
     weatherapp,
     threejs,
+    github,
+    linkedin,
+    leetcode
   } from "../assets";
   
+  const socials = [
+    {
+      title:'Github',
+      icon: github,
+      url:'https://github.com/shubhatRashid/'
+    },
+    {
+      title:'LinkedIn',
+      icon: linkedin,
+      url:'https://www.linkedin.com/in/shubhat-rashid-b52b40276/'
+    },
+    {
+      title:'leetcode',
+      icon : leetcode,
+      url:'https://leetcode.com/rashidshubhat41'
+    }
+  ]
   export const navLinks = [
     {
       id: "about",
@@ -80,7 +105,56 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
+    },
+    {
+      name:"Redux",
+      icon: redux
+    },
+    {
+      name:'tailwind',
+      icon: tailwind
+    },
+    {
+      name:'mongoDB',
+      icon:mongodb
+    },
+    {
+      name:"git",
+      icon:git
+    },
+    {
+      name: "github",
+      icon : github
+    },
+    {
+      name:'leetcode',
+      icon:leetcode
+    },
+    {
+      name:'express.JS',
+      icon: express
+    },
+    {
+      name : 'bootstrap',
+      icon : bootstrap
+    },
+    {
+      name : 'mUi',
+      icon : materialUi
+    },
+    {
+      name: 'sanity',
+      icon: sanity
+    },
+    {
+      name: 'strapi',
+      icon : strapi
+    },
+    {
+      name: 'React Native',
+      icon : reactjs
     }
+
   ];
   
   const experiences = [
@@ -256,4 +330,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects,socials };

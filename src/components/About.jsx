@@ -2,16 +2,16 @@ import React from 'react'
 import { Tilt } from 'react-tilt'
 import {motion} from "framer-motion"
 import {styles} from "../styles"
-import {services} from "../constants"
+import {technologies} from "../constants"
 import {fadeIn, textVariant} from "../utils/motion"
 import {SectionWrapper} from '../hoc/index'
 
-const ServiceCard = ({index,title,icon}) =>{
+const ServiceCard = ({index,name,icon}) =>{
   return  (
- <Tilt className="xs:w-[250px] w-full">
+ <Tilt className="">
     <motion.div
     variants={fadeIn("right","string",0.5*index,0.75)}
-    className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
+    className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card '>
     
       <div
         options ={{
@@ -19,10 +19,10 @@ const ServiceCard = ({index,title,icon}) =>{
         scale:1,
         speed:450
         }} 
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-3 px-5 flex justify-evenly items-center flex-col w-[130px] h-[130px]'
         >
-          <img src = {icon} alt = {title} className='h-16 w-16 object-contain' />
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+          <img src = {icon} alt = {name} className='h-16 w-16 object-contain' />
+          <p className='text-center text-xs uppercase text-teal-600'>{name}</p>
       </div>
     </motion.div>
  </Tilt>
@@ -34,8 +34,7 @@ const About = () => {
     <>
       <motion.div
       variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}>Introduction</h2>
       </motion.div>
 
       <motion.p
@@ -46,9 +45,10 @@ const About = () => {
         .Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service,index) =>(
-          <ServiceCard key = {service.title} index = {index} {...service}/>
+      <h2 className={`${styles.sectionHeadText} mt-10`}>Skills</h2>
+      <div className='mt-10 flex flex-wrap gap-5 justify-center items-center'>
+        {technologies.map((tech,index) =>(
+          <ServiceCard key = {tech.name} index = {index} name={tech.name} icon={tech.icon}/>
         ))}
       </div>
     </>
