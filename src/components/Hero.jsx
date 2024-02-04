@@ -5,7 +5,7 @@ import { Tilt } from 'react-tilt'
 import {fadeIn} from "../utils/motion"
 import { motion } from "framer-motion"
 import {socials} from "../constants"
-import resume from "../../dist/resume.pdf"
+import resume from "../assets/resume.pdf"
 
 const ScrollButton = () => {
   return (
