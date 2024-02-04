@@ -85,7 +85,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='flex justify-center items-center lg:w-1/2 w-full border border-2 rounded-lg border-[#915eff]'>
+        <div className='hidden sm:flex justify-center items-center lg:w-1/2 w-full border border-2 rounded-lg border-[#915eff]'>
         
             <Cube/>
           

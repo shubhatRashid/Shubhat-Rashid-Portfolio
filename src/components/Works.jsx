@@ -74,14 +74,14 @@ const [Data,setData] = useState([])
 	}, []);
  
   return (
-    <>
+    <section id='works' className='py-20'>
       <motion.div
         variants={textVariant()}>
           <p className={styles.sectionSubText}>My Projects</p>
           <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
 
-      <div className='w-full flex flex-col'>
+      <div className='w-full flex flex-col' >
         <motion.p
          variants={fadeIn("","",0.1,1)}
          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
@@ -102,7 +102,7 @@ const [Data,setData] = useState([])
         </div>
       </div>
 
-    </>
+    </section>
   )
 }
 
