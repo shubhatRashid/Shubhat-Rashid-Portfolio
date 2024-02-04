@@ -24,8 +24,28 @@ import {
     portfolio,
     weatherapp,
     threejs,
+    github,
+    linkedin,
+    leetcode
   } from "../assets";
   
+  const socials = [
+    {
+      title:'Github',
+      icon: github,
+      url:'https://github.com/shubhatRashid/'
+    },
+    {
+      title:'LinkedIn',
+      icon: linkedin,
+      url:'https://www.linkedin.com/in/shubhat-rashid-b52b40276/'
+    },
+    {
+      title:'leetcode',
+      icon : leetcode,
+      url:'https://leetcode.com/rashidshubhat41'
+    }
+  ]
   export const navLinks = [
     {
       id: "about",
@@ -256,4 +276,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects,socials };

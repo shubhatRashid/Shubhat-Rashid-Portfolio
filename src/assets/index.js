@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import linkedin from "./linkedin.png"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -30,8 +30,10 @@ import ecommer from "./ecommer.png";
 import todolist from "./todolist.png";
 import portfolio from "./portfolio.png";
 import weatherapp from "./weatherapp.png";
-
+import leetcode from "./leetcode.png"
 export {
+  leetcode,
+  linkedin,
   logo,
   backend,
   creator,

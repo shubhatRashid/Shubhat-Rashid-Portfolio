@@ -4,8 +4,9 @@ import { Cube } from './canvas'
 import { Tilt } from 'react-tilt'
 import {fadeIn} from "../utils/motion"
 import { motion } from "framer-motion"
-import {services} from "../constants"
+import {socials} from "../constants"
 import resume from "../../dist/resume.pdf"
+
 const ScrollButton = () => {
   return (
     <div className='flex justify-center items-center '>
@@ -25,24 +26,27 @@ const ScrollButton = () => {
     </div>
   )
 }
-const Social = ({index,title,icon}) =>{
+const Social = ({index,title,icon,url}) =>{
   return  (
  <Tilt className="">
     <motion.div
     variants={fadeIn("right","string",0.5*index,0.75)}
     className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
     
-      <div
+      <a
+        target="_blank" 
+        rel="noreferrer"
+        href={url}
         options ={{
         max:45,
         scale:1,
         speed:450
         }} 
-        className='bg-tertiary rounded-[20px] py-5 px-5 flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-5 px-5 flex justify-evenly items-center flex-col gap-2'
         >
           <img src = {icon} alt = {title} className='h-10 w-10 object-contain' />
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
-      </div>
+          <h3 className='text-indigo-500 text-xs text-center font-serif'>{title}</h3>
+      </a>
     </motion.div>
  </Tilt>
   )
@@ -50,8 +54,8 @@ const Social = ({index,title,icon}) =>{
 
 const Hero = () => {
   return (
-    <section className={`flex items-center justify-center pt-20 xs:pt-0 max-h-screen`}>
-      <div className='md:flex-row flex-col flex justify-center items-center h-full gap-10 w-full'>
+    <section className={`flex items-center justify-center`}>
+      <div className='lg:flex-row flex-col flex justify-center items-center h-full gap-20 w-full px-5'>
 
         <div className={`flex flex-col items-start justify-center gap-20 h-screen`}>
           <div className='flex flex-row mx-auto items-start justify-center gap-5 h-1/2 w-full'>
@@ -72,15 +76,15 @@ const Hero = () => {
 
           <div className='w-full flex flex-row justify-around items-center gap-5'>
             <div className='flex gap-5 items-center justify-center'>
-              {services.map((service,index) =>(
-              <Social  index = {index} />
+              {socials.map((social,index) =>(
+              <Social  index = {index} title={social.title} icon={social.icon} url={social.url}/>
             ))}
             </div>
             <ScrollButton />
           </div>
         </div>
 
-        <div className='flex justify-center items-center lg:w-1/2 w-full border border-2 rounded-lg border-[#915eff] '>
+        <div className='flex justify-center items-center lg:w-1/2 w-full border border-2 rounded-lg border-[#915eff]'>
         
             <Cube/>
           
