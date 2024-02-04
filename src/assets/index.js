@@ -33,7 +33,7 @@ import weatherapp from "./weatherapp.png";
 import leetcode from "./leetcode.png"
 import express from "./expressjs.png"
 import bootstrap from "./bootstrap.png"
-import materialUi from "./materialUi.png"
+import materialUi from "./materialui.png"
 import sanity from "./sanity.png"
 import strapi from "./strapiNew.png"
 export {
