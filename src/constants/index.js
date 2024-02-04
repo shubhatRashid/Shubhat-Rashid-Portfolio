@@ -1,4 +1,9 @@
 import {
+    materialUi,
+    sanity,
+    strapi,
+    bootstrap,
+    express,
     mobile,
     backend,
     creator,
@@ -100,7 +105,56 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
+    },
+    {
+      name:"Redux",
+      icon: redux
+    },
+    {
+      name:'tailwind',
+      icon: tailwind
+    },
+    {
+      name:'mongoDB',
+      icon:mongodb
+    },
+    {
+      name:"git",
+      icon:git
+    },
+    {
+      name: "github",
+      icon : github
+    },
+    {
+      name:'leetcode',
+      icon:leetcode
+    },
+    {
+      name:'express.JS',
+      icon: express
+    },
+    {
+      name : 'bootstrap',
+      icon : bootstrap
+    },
+    {
+      name : 'mUi',
+      icon : materialUi
+    },
+    {
+      name: 'sanity',
+      icon: sanity
+    },
+    {
+      name: 'strapi',
+      icon : strapi
+    },
+    {
+      name: 'React Native',
+      icon : reactjs
     }
+
   ];
   
   const experiences = [

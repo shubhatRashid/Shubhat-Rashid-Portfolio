@@ -31,7 +31,17 @@ import todolist from "./todolist.png";
 import portfolio from "./portfolio.png";
 import weatherapp from "./weatherapp.png";
 import leetcode from "./leetcode.png"
+import express from "./expressjs.png"
+import bootstrap from "./bootstrap.png"
+import materialUi from "./materialUi.png"
+import sanity from "./sanity.png"
+import strapi from "./strapiNew.png"
 export {
+  materialUi,
+  sanity,
+  strapi,
+  bootstrap,
+  express,
   leetcode,
   linkedin,
   logo,
