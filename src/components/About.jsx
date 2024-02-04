@@ -19,9 +19,9 @@ const ServiceCard = ({index,name,icon}) =>{
         scale:1,
         speed:450
         }} 
-        className='bg-tertiary rounded-[20px] py-3 px-5 flex justify-evenly items-center flex-col w-[130px] h-[130px]'
+        className='bg-tertiary rounded-[20px] py-5 px-5 flex justify-evenly items-center flex-col '
         >
-          <img src = {icon} alt = {name} className='h-16 w-16 object-contain' />
+          <img src = {icon} alt = {name} className='h-10 w-10 object-contain' />
           <p className='text-center text-xs uppercase text-teal-600'>{name}</p>
       </div>
     </motion.div>

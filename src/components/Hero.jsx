@@ -63,9 +63,10 @@ const Hero = () => {
                   <div className='bg-[#915eff] w-5 h-5 rounded-full'/>
                   <div className='w-1 bg-[#915eff] sm:h-80 h-80 mx-auto violet-gradient'/>
             </div>
-            <div className='flex flex-col  w-full gap-3'>
-              <h1 className='text-white' >Hi, i'm </h1>
-              <span className={`${styles.heroHeadText} text-[#915eff]`}>Shubhat ,</span>
+            <div className='flex flex-col  w-full gap-1'>
+              <h1 className='text-white text-xl mt-5' >Hi, i'm </h1>
+              <span className={`${styles.heroHeadText} text-[#915eff]`}>Shubhat</span>
+              <span className={`${styles.heroSubHeadText} text-[#915eff] leading-tight`}>Rashid,</span>
               <p className={`${styles.heroSubText} text-white-100`}>Full/Mern Stack Developer <br className='sm:block hidden'/></p>
               <div className='flex w-full items-center justify-start p-1 '>
                 <a className='py-4 px-8 rounded-lg bg-[#915eff] text-white' href={resume} download>Download CV</a>
