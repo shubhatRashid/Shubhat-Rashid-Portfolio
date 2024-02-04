@@ -78,7 +78,7 @@ const Hero = () => {
           <div className='w-full flex flex-row justify-around items-center gap-5'>
             <div className='flex gap-5 items-center justify-center'>
               {socials.map((social,index) =>(
-              <Social  index = {index} title={social.title} icon={social.icon} url={social.url}/>
+              <Social key={social.title} index = {index} title={social.title} icon={social.icon} url={social.url}/>
             ))}
             </div>
             <ScrollButton />

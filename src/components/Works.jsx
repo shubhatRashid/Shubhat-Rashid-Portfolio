@@ -74,7 +74,7 @@ const [Data,setData] = useState([])
 	}, []);
  
   return (
-    <section id='works' className='py-20'>
+    <>
       <motion.div
         variants={textVariant()}>
           <p className={styles.sectionSubText}>My Projects</p>
@@ -102,8 +102,8 @@ const [Data,setData] = useState([])
         </div>
       </div>
 
-    </section>
+    </>
   )
 }
 
-export default SectionWrapper(Works,"")
+export default SectionWrapper(Works,"works")

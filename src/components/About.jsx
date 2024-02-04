@@ -31,7 +31,7 @@ const ServiceCard = ({index,name,icon}) =>{
 
 const About = () => {
   return (
-    <section id='about' className='py-10'>
+    <>
       <motion.div
       variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>Introduction</h2>
@@ -51,7 +51,7 @@ const About = () => {
           <ServiceCard key = {tech.name} index = {index} name={tech.name} icon={tech.icon}/>
         ))}
       </div>
-    </section>
+    </>
   )
 }
 
