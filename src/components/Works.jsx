@@ -10,7 +10,7 @@ import { useState,useEffect } from "react";
 
 const ProjectCard = ({index,name,description,tags,image,link}) =>{
 return (
-  <motion.div variants={fadeIn("up","spring",index*0.5,0.75)}>
+  <motion.div >
     <Tilt 
     options={{
       max :45,
@@ -96,7 +96,7 @@ const [Data,setData] = useState([])
         with different technologies 
         and manage projects effectively.
         </motion.p>
-        <div className='mt-20 flex flex-wrap gap-7 justify-center items-center'>
+        <div className='mt-10 flex flex-wrap gap-4 justify-around items-center'>
               {Data.map((project,index) => (
                 <ProjectCard key = {index} {...project} index = {index}/>
               ))}

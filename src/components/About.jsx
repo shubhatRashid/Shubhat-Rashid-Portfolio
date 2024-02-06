@@ -10,7 +10,6 @@ const ServiceCard = ({index,name,icon}) =>{
   return  (
  <Tilt className="">
     <motion.div
-    variants={fadeIn("right","string",0.5*index,0.75)}
     className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card '>
     
       <div
