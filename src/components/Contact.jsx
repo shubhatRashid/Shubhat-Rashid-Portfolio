@@ -21,7 +21,7 @@ const Contact = () => {
   }
   const handleSubmit = (e) => {
     e.preventDefault()
-    emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, 'template_nc4sumg', formRef.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+    emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, 'template_i0id2l1', formRef.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
     .then((result) => {
         console.log(result.text);
     }, (error) => {

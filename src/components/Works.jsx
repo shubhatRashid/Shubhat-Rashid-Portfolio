@@ -16,7 +16,8 @@ return (
       max :45,
       scale:1,
       speed:450
-    }}className="rounded-2xl bg-tertiary p-5 sm:w-[360px] w-full"
+    }}
+    className=" relative rounded-2xl bg-tertiary p-5 sm:w-[360px] w-full h-[600px] flex flex-col justify-around"
     >
       <div>
         <img 
@@ -95,7 +96,7 @@ const [Data,setData] = useState([])
         with different technologies 
         and manage projects effectively.
         </motion.p>
-        <div className='mt-20 flex flex-wrap gap-7'>
+        <div className='mt-20 flex flex-wrap gap-7 justify-center items-center'>
               {Data.map((project,index) => (
                 <ProjectCard key = {index} {...project} index = {index}/>
               ))}
