@@ -17,7 +17,7 @@ return (
       scale:1,
       speed:450
     }}
-    className=" relative rounded-2xl bg-tertiary p-5 sm:w-[360px] w-full h-[600px] flex flex-col justify-around"
+    className=" relative rounded-2xl bg-tertiary p-5 sm:w-[360px] w-full h-[500px] flex flex-col justify-around"
     >
       <div>
         <img 
@@ -77,7 +77,7 @@ const [Data,setData] = useState([])
   return (
     <>
       <motion.div
-       variants={fadeIn("","",0.1,1)}
+       variants={fadeIn("","",0.1,0.25)}
         >
           <p className={styles.sectionSubText}>My Projects</p>
           <h2 className={styles.sectionHeadText}>Projects</h2>
@@ -85,7 +85,7 @@ const [Data,setData] = useState([])
 
       <div className='w-full flex flex-col' >
         <motion.p
-         variants={fadeIn("","",0.1,1)}
+         variants={fadeIn("","",0.1,0.25)}
          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         Following Projects showcase my skills 
         and experience through 
