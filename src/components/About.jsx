@@ -50,6 +50,7 @@ const About = () => {
           <ServiceCard key = {tech.name} index = {index} name={tech.name} icon={tech.icon}/>
         ))}
       </div>
+       
     </>
   )
 }
