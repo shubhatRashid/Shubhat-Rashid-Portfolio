@@ -98,8 +98,11 @@ const [Data,setData] = useState([])
         and manage projects effectively.
         </motion.p>
         <div className='mt-10 flex flex-wrap gap-4 justify-around items-center'>
-              {Data.map((project,index) => (
-                <ProjectCard key = {index} {...project} index = {index}/>
+              {
+                Data.map((project,index) => (
+                
+                project.name  && <ProjectCard key = {index} {...project} index = {index}/>
+                
               ))}
         </div>
       </div>
