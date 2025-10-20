@@ -14,8 +14,8 @@ const Loader = () => {
 export default function Cube() {
   return (
     
-      <Suspense fallback={<Loader/>}>
-        <Spline scene="https://prod.spline.design/ibZgDc2alkHGJDBn/scene.splinecode" />
+      <Suspense fallback={<Loader/>} >
+        <Spline scene="https://prod.spline.design/22RjDkor1axLDdEU/scene.splinecode" className="pl-20"/>
       </Suspense>
    
   )
